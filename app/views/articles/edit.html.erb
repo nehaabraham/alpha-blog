@@ -1,9 +1,10 @@
+<h1>Edit Article</h1>
+
 <% if @article.errors.any? %>
   <% @article.errors.full_messages.each do |msg| %>
     <%= msg %><br>
   <% end %>
 <% end %>
-<h1>Create New Article</h1>
 
 <%= form_for @article do |f| %>
   <p>
