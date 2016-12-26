@@ -1,2 +1,43 @@
+$navbar-default-bg: #FFFFFF;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.container{
+  padding-top: 10px;
+}
+#logo {
+  float: left;
+  font-size: 1.7em;
+  text-transform: lowercase;
+  letter-spacing: +1px;
+  font-weight: bold;
+}
+
+.jumbotron {
+  div{
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+footer {
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  small{
+    float: left;
+  }
+  a:hover {
+    color: #222;
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+    float: right;
+    li{
+      float:left;
+      margin: 5px;
+    }
+  }
+}
