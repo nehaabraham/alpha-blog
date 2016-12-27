@@ -1,8 +1,4 @@
-<% if @article.errors.any? %>
-  <% @article.errors.full_messages.each do |msg| %>
-    <%= msg %><br>
-  <% end %>
-<% end %>
+<%= render 'shared/errors', obj: @article %>
 
 <div class="row">
   <div class="col-xs-12">
@@ -10,36 +6,35 @@
 
     <div class="row">
       <div class="form-group">
-        <div class="control-label col-sm-2">
+        <div class="control-label col-xs-2">
           <%= f.label :title %>
         </div>
-        <div class="col-sm-8">
+        <div class="col-xs-8">
           <%= f.text_field :title, class: "form-control", autofocus: true %>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="row">
+
       <div class="form-group">
-        <div class="control-label col-sm-2">
+        <div class="control-label col-xs-2">
           <%= f.label :description %>
         </div>
-        <div class="col-sm-8">
+        <div class="col-xs-8">
           <%= f.text_area :description, rows: 10, class: "form-control" %>
         </div>
       </div>
     </div>
-    <br>
-    <div class="form-group">
-      <div class="col-sm-offset-2">
-        <%= f.submit class: "btn btn-default"%>
+    <div>
+      <div class="form-group">
+        <div class="col-xs-offset-2">
+          <%= f.submit class: "btn btn-default"%>
+        </div>
       </div>
     </div>
     <% end %>
 
     <br>
-    
-    <div class="col-sm-offset-2">
+
+    <div class="col-xs-offset-2">
       [ <%= link_to "cancel request", articles_path %> ]
     </div>
   </div>
