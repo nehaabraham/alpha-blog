@@ -35,7 +35,7 @@
     <div>
       <div class="form-group">
         <div class="col-xs-offset-2">
-          <%= f.submit "sign up", class: "btn btn-default"%>
+          <%= f.submit(@user.new_record? ? "Sign up" : "Update account", class: "btn btn-default")%>
         </div>
       </div>
     </div>
