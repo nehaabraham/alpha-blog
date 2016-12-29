@@ -79,3 +79,22 @@ footer {
   list-style: none;
   padding-left: 0;
 }
+
+span{
+  text-align: center;
+  .badge{
+    letter-spacing: 1px;
+    text-transform: lowercase;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+.input_checkbox{
+  input{
+    width: auto !important;
+  }
+}
