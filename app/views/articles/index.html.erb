@@ -1,4 +1,11 @@
 <h1 align="center">Articles</h1>
+<div class="row">
+  <% if logged_in? %>
+    <div class="row" align="center">
+      <span><%= link_to "new article", new_article_path, class: "btn btn-default btn-sm" %></span>
+    </div>
+  <% end %>
+</div>
 <div align="center"><%= will_paginate %></div>
 <%= render 'article', obj: @articles %>
 <div align="center"><%= will_paginate %></div>
